@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Jalepeño",
+        "scientific_name": "Capsicum annuum",
+        "shu_min": 2500,
+        "shu_max": 8000,
+        "length_min": 2.5,
+        "length_max": 3.5,
+        "color_ripe": "red",
+        "color_growing": "green",
+        "harvest": 80
+    }
+]
