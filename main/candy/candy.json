@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Sour Patch Kids",
+    "brand": "Mondelēz International",
+    "flavor": ["Lemon", "Lime", "Orange", "Cherry", "Blue Raspberry"],
+    "color": ["Yellow", "Green", "Orange", "Red", "Blue"],
+    "type": "gummy",
+    "taste": ["Sour", "Sweet"],
+    "origin": "United States"
+  },
+  {
+    "name": "Haribo Goldbears",
+    "brand": "Haribo",
+    "flavor": ["Strawberry", "Lemon", "Orange", "Pineapple", "Raspberry", "Apple"],
+    "color": ["Red", "Yellow", "Orange", "White", "Green"],
+    "type": "gummy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "Germany"
+  },
+  {
+    "name": "Swedish Fish",
+    "brand": "Mondelēz International",
+    "flavor": ["Fruit"],
+    "color": ["Red"],
+    "type": "gummy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "Sweden"
+  },
+  {
+    "name": "Trolli Sour Brite Crawlers",
+    "brand": "Trolli",
+    "flavor": ["Strawberry", "Lemon", "Orange", "Cherry"],
+    "color": ["Red", "Yellow", "Green", "Blue"],
+    "type": "gummy",
+    "taste": ["Sour", "Sweet"],
+    "origin": "Germany"
+  },
+  {
+    "name": "Albanese Gummy Bears",
+    "brand": "Albanese",
+    "flavor": ["Cherry", "Lemon", "Orange", "Grape", "Blue Raspberry"],
+    "color": ["Red", "Yellow", "Orange", "Purple", "Blue"],
+    "type": "gummy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Black Forest Gummy Bears",
+    "brand": "Black Forest",
+    "flavor": ["Cherry", "Lemon", "Orange", "Pineapple", "Apple"],
+    "color": ["Red", "Yellow", "Orange", "Green"],
+    "type": "gummy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Mike and Ike",
+    "brand": "Just Born",
+    "flavor": ["Cherry", "Lemon", "Orange", "Strawberry", "Lime"],
+    "color": ["Red", "Yellow", "Orange", "Pink", "Green"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Jelly Belly",
+    "brand": "Jelly Belly",
+    "flavor": ["Very Cherry", "Buttered Popcorn", "Watermelon", "Green Apple"],
+    "color": ["Red", "Yellow", "Green", "Pink"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Jolly Rancher",
+    "brand": "The Hershey Company",
+    "flavor": ["Watermelon", "Green Apple", "Blue Raspberry", "Cherry"],
+    "color": ["Red", "Green", "Blue"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Tart"],
+    "origin": "United States"
+  },
+  {
+    "name": "Werther's Original",
+    "brand": "Storck",
+    "flavor": ["Caramel"],
+    "color": ["Golden"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Buttery"],
+    "origin": "Germany"
+  },
+  {
+    "name": "Life Savers",
+    "brand": "The Hershey Company",
+    "flavor": ["Cherry", "Watermelon", "Orange", "Pineapple", "Raspberry"],
+    "color": ["Red", "Green", "Orange", "Yellow"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Dum Dums",
+    "brand": "Spangler Candy Company",
+    "flavor": ["Cherry", "Grape", "Root Beer", "Blue Raspberry", "Cream Soda"],
+    "color": ["Red", "Purple", "Blue", "Brown", "White"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Reese's Peanut Butter Cups",
+    "brand": "The Hershey Company",
+    "flavor": ["Chocolate", "Peanut Butter"],
+    "color": ["Brown", "Orange"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Salty"],
+    "origin": "United States"
+  },
+  {
+    "name": "KitKat",
+    "brand": "Nestlé",
+    "flavor": ["Milk Chocolate", "Wafer"],
+    "color": ["Brown", "Cream"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Crunchy"],
+    "origin": "United Kingdom"
+  },
+  {
+    "name": "Twix",
+    "brand": "Mars",
+    "flavor": ["Chocolate", "Caramel", "Biscuit"],
+    "color": ["Brown", "Golden"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Crunchy"],
+    "origin": "United Kingdom"
+  },
+  {
+    "name": "Snickers",
+    "brand": "Mars",
+    "flavor": ["Chocolate", "Caramel", "Peanut"],
+    "color": ["Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Salty"],
+    "origin": "United States"
+  },
+  {
+    "name": "Milky Way",
+    "brand": "Mars",
+    "flavor": ["Chocolate", "Caramel", "Nougat"],
+    "color": ["Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Creamy"],
+    "origin": "United States"
+  },
+  {
+    "name": "Crunch",
+    "brand": "The Hershey Company",
+    "flavor": ["Milk Chocolate", "Crisped Rice"],
+    "color": ["Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Crunchy"],
+    "origin": "United States"
+  },
+  {
+    "name": "Toblerone",
+    "brand": "Mondelez International",
+    "flavor": ["Milk Chocolate", "Honey", "Almond"],
+    "color": ["Brown", "Golden"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Nutty"],
+    "origin": "Switzerland"
+  },
+  {
+    "name": "Ferrero Rocher",
+    "brand": "Ferrero",
+    "flavor": ["Chocolate", "Hazelnut"],
+    "color": ["Brown", "Golden"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Nutty", "Crunchy"],
+    "origin": "Italy"
+  },
+  {
+    "name": "Lindt Lindor",
+    "brand": "Lindt",
+    "flavor": ["Milk Chocolate"],
+    "color": ["Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Creamy"],
+    "origin": "Switzerland"
+  },
+  {
+    "name": "M&M's",
+    "brand": "Mars",
+    "flavor": ["Milk Chocolate"],
+    "color": ["Red", "Yellow", "Blue", "Green", "Orange", "Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Crunchy"],
+    "origin": "United States"
+  },
+  {
+    "name": "Hershey's Kisses",
+    "brand": "The Hershey Company",
+    "flavor": ["Milk Chocolate"],
+    "color": ["Brown", "Silver"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Creamy"],
+    "origin": "United States"
+  },
+  {
+    "name": "Nerds",
+    "brand": "Ferrara Candy Company",
+    "flavor": ["Grape", "Strawberry"],
+    "color": ["Purple", "Pink"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Sour"],
+    "origin": "United States"
+  },
+  {
+    "name": "Smarties",
+    "brand": "Smarties Candy Company",
+    "flavor": ["Orange Cream"],
+    "color": ["Pink", "Yellow", "Green", "Purple", "White"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Tart"],
+    "origin": "United States"
+  },
+  {
+    "name": "Ring Pop",
+    "brand": "Bazooka Brands",
+    "flavor": ["Strawberry", "Blue Raspberry", "Watermelon"],
+    "color": ["Red", "Blue", "Green"],
+    "type": "hard candy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United States"
+  },
+  {
+    "name": "Tootsie Roll",
+    "brand": "Tootsie Roll Industries",
+    "flavor": ["Chocolate"],
+    "color": ["Brown"],
+    "type": "chocolate",
+    "taste": ["Sweet", "Chewy"],
+    "origin": "United States"
+  },
+  {
+    "name": "Airheads",
+    "brand": "Perfetti Van Melle",
+    "flavor": ["Cherry", "Watermelon", "Blue Raspberry", "White Mystery"],
+    "color": ["Red", "Green", "Blue", "White"],
+    "type": "gummy",
+    "taste": ["Sweet", "Tart"],
+    "origin": "United States"
+  },
+  {
+    "name": "Starburst",
+    "brand": "Mars",
+    "flavor": ["Strawberry", "Cherry", "Orange", "Lemon"],
+    "color": ["Pink", "Red", "Orange", "Yellow"],
+    "type": "gummy",
+    "taste": ["Sweet", "Fruity"],
+    "origin": "United Kingdom"
+  },
+  {
+    "name": "Sour Skittles",
+    "brand": "Mars",
+    "flavor": ["Strawberry", "Lemon", "Orange", "Grape", "Green Apple"],
+    "color": ["Red", "Yellow", "Orange", "Purple", "Green"],
+    "type": "hard candy",
+    "taste": ["Sour", "Sweet"],
+    "origin": "United States"
+  }
+]

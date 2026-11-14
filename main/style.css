@@ -1,22 +1,62 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
 }
 
-.pepper-list,
-.pepper-details {
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #222;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+aside {
+    width: 280px;
+    flex-shrink: 0;
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 
-#pepper-list {
+section {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#candy-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.pepper-button {
+button {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 7px;
@@ -26,15 +66,24 @@ body {
     font-size: 15px;
 }
 
-.pepper-button:hover {
+button:hover {
     background: #fff0f0;
     border-color: #d93636;
 }
 
-.pepper-button.active {
+button.active {
     background: #d93636;
     color: white;
     border-color: #d93636;
+}
+
+#hide-list,
+#show-list {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+    cursor: pointer;
 }
 
 .detail-grid {
@@ -61,61 +110,11 @@ body {
     font-size: 16px;
 }
 
-@media (max-width: 650px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-main {
-    display: flex;
-    gap: 20px;
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 20px;
-    align-items: flex-start;
-}
-
-#pepper-sidebar {
-    width: 280px;
-    flex-shrink: 0;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.sidebar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-#hide-list,
-#show-list {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    background: white;
-    cursor: pointer;
-}
-
-#pepper-details {
-    flex: 1;
-    min-width: 0;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-main.list-hidden #pepper-sidebar {
+main.list-hidden aside {
     display: none;
 }
 
-main.list-hidden #pepper-details {
+main.list-hidden section {
     width: 100%;
 }
 
@@ -128,8 +127,12 @@ main.list-hidden #pepper-details {
         flex-direction: column;
     }
 
-    #pepper-sidebar,
-    #pepper-details {
+    aside,
+    section {
         width: 100%;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
     }
 }
