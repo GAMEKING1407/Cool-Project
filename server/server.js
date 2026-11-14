@@ -1,12 +1,13 @@
 
 const express = require("express");
 const path = require("path");
-const peppers = require("./peppers.json");
+const peppers = require("../main/peppers/peppers.json");
 
 const app = express();
 const PORT = 3000;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "..")));
 
 app.get("/api/peppers", (req, res) => {
     res.json(
@@ -18,7 +19,7 @@ app.get("/api/peppers", (req, res) => {
 });
 
 app.get("/api/peppers/:name", (req, res) => {
-    const name = decodeURIComponent(req.params.name);
+    const name = req.params.name;
 
     const pepper = peppers.find(
         p => p.name.toLowerCase() === name.toLowerCase()
@@ -34,5 +35,5 @@ app.get("/api/peppers/:name", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Peppers DB running at http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
 });
