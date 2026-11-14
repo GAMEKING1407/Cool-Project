@@ -6,7 +6,7 @@ const hideListButton = document.getElementById("hide-list");
 
 const showListButton = document.createElement("button");
 showListButton.id = "show-list";
-showListButton.textContent = "← Show Candy";
+showListButton.textContent = "Show Candy";
 showListButton.hidden = true;
 
 candyDetails.before(showListButton);
