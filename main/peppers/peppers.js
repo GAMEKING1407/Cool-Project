@@ -4,17 +4,23 @@ const pepperDetails = document.getElementById("pepper-details");
 
 const main = document.querySelector("main");
 const hideListButton = document.getElementById("hide-list");
-const sortParameter = document.getElementById("sort-parameter");
-const sortOrder = document.getElementById("sort-order");
 
 const showListButton = document.createElement("button");
 showListButton.id = "show-list";
-showListButton.textContent = "Show Peppers";
+showListButton.textContent = "← Show Peppers";
 showListButton.hidden = true;
 
 pepperDetails.before(showListButton);
 
-let allPeppers = [];
+hideListButton.addEventListener("click", () => {
+    main.classList.add("list-hidden");
+    showListButton.hidden = false;
+});
+
+showListButton.addEventListener("click", () => {
+    main.classList.remove("list-hidden");
+    showListButton.hidden = true;
+});
 
 async function loadPeppers() {
     try {
@@ -24,61 +30,27 @@ async function loadPeppers() {
             throw new Error("Failed to load peppers");
         }
 
-        allPeppers = await response.json();
+        const peppers = await response.json();
 
-        updatePepperList();
+        pepperList.replaceChildren();
+
+        peppers.forEach(pepper => {
+            const button = document.createElement("button");
+
+            button.className = "pepper-button";
+            button.textContent = pepper.name;
+
+            button.addEventListener("click", () => {
+                selectPepper(pepper.name, button);
+            });
+
+            pepperList.appendChild(button);
+        });
     } catch (error) {
         pepperList.textContent = "Could not load peppers.";
         console.error(error);
     }
 }
-
-
-function sortPeppers(peppers, parameter, order = "asc") {
-    const sorted = [...peppers];
-
-    sorted.sort((a, b) => {
-        let valueA = a[parameter];
-        let valueB = b[parameter];
-
-        if (typeof valueA === "string") {
-            valueA = valueA.toLowerCase();
-            valueB = valueB.toLowerCase();
-        }
-
-        if (valueA < valueB) return order === "asc" ? -1 : 1;
-        if (valueA > valueB) return order === "asc" ? 1 : -1;
-
-        return 0;
-    });
-
-    return sorted;
-}
-
-function updatePepperList() {
-    const parameter = sortParameter.value;
-    const order = sortOrder.value;
-
-    const sorted = sortPeppers(allPeppers, parameter, order);
-
-    pepperList.replaceChildren();
-
-    sorted.forEach(pepper => {
-        const button = document.createElement("button");
-
-        button.className = "pepper-button";
-        button.textContent = pepper.name;
-
-        button.addEventListener("click", () => {
-            selectPepper(pepper.name, button);
-        });
-
-        pepperList.appendChild(button);
-    });
-}
-
-sortParameter.addEventListener("change", updatePepperList);
-sortOrder.addEventListener("change", updatePepperList);
 
 async function selectPepper(name, button) {
     document.querySelectorAll(".pepper-button").forEach(btn => {
@@ -101,9 +73,6 @@ async function selectPepper(name, button) {
         const pepper = await response.json();
 
         displayPepper(pepper);
-
-        main.classList.add("list-hidden");
-        showListButton.hidden = false;
     } catch (error) {
         pepperDetails.textContent = "Could not load pepper data.";
         console.error(error);
@@ -148,15 +117,5 @@ function displayPepper(pepper) {
 
     pepperDetails.append(title, scientific, grid);
 }
-
-hideListButton.addEventListener("click", () => {
-    main.classList.add("list-hidden");
-    showListButton.hidden = false;
-});
-
-showListButton.addEventListener("click", () => {
-    main.classList.remove("list-hidden");
-    showListButton.hidden = true;
-});
 
 loadPeppers();
