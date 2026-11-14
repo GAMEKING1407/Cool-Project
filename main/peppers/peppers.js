@@ -33,17 +33,37 @@ async function loadPeppers() {
     }
 }
 
+
 function sortPeppers(peppers, parameter, order = "asc") {
+    const validParameters = [
+        "name",
+        "scientific_name",
+        "shu_min",
+        "shu_max",
+        "length_min",
+        "length_max",
+        "color_ripe",
+        "color_growing",
+        "days_to_harvest"
+    ];
+
+    if (!validParameters.includes(parameter)) {
+        return [...peppers];
+    }
+
     return [...peppers].sort((a, b) => {
         const valueA = a[parameter];
         const valueB = b[parameter];
 
         let result;
 
-        if (typeof valueA === "string") {
+        if (typeof valueA === "string" && typeof valueB === "string") {
             result = valueA.localeCompare(valueB);
         } else {
-            result = Number(valueA) - Number(valueB);
+            const numberA = Number(valueA);
+            const numberB = Number(valueB);
+
+            result = numberA - numberB;
         }
 
         return order === "desc" ? -result : result;
